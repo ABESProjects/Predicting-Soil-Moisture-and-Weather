@@ -3,7 +3,7 @@
 # Atul Dagar (2000320120056)
 # Anurag Bhardwaj (2000320120039)
 # Aryan Tyagi (2000320120050)
-# Code: [Predicting Soil Moisture.ipynb](ttps://raw.githubusercontent.com/ABESProjects/Predicting-Soil-Moisture-and-Weather).
+# Code: [Predicting Soil Moisture.ipynb](https://raw.githubusercontent.com/ABESProjects/Predicting-Soil-Moisture-and-Weather).
 # Data: [data](https://github.com/ABESProjects/Predicting-Soil-Moisture-and-Weather/tree/main/data)
 
 ## Abstract
@@ -56,7 +56,7 @@ Within the data, there are GIS file types that can be imported into Google Maps 
 
 ## 4. Data Cleaning and Aggregation
 
-The first step is to get the soil moisture data into a combined format, currently it is in one file per sensor, and there are 42 sensors. See the [Predicting Soil Moisture.ipynb](ttps://raw.githubusercontent.com/ABESProjects/Predicting-Soil-Moisture-and-Weather). file to see how this was done, specifically the section titled "Data Processing". After aggregation, some basic information can be checked about the data. For instance, there is quite a bit of NAs in the data. These NAs are just instances where there was no measurement on that day. There is about 45% NAs in the measurement columns. To further clean the data, any row that has only NAs for the measurements will be removed.
+The first step is to get the soil moisture data into a combined format, currently it is in one file per sensor, and there are 42 sensors. See the [Predicting Soil Moisture.ipynb](https://raw.githubusercontent.com/ABESProjects/Predicting-Soil-Moisture-and-Weather). file to see how this was done, specifically the section titled "Data Processing". After aggregation, some basic information can be checked about the data. For instance, there is quite a bit of NAs in the data. These NAs are just instances where there was no measurement on that day. There is about 45% NAs in the measurement columns. To further clean the data, any row that has only NAs for the measurements will be removed.
 
 Next, the weather data needs some small adjustments. This is mostly in the form of removing columns that either are empty or have redundant data such as elevation, which is the same for every row. 
 
@@ -64,7 +64,7 @@ Once the data is sufficiently clean, some choices have to be made on joining the
 
 ## 5. Pipeline for Preprocessing
 
-Before feeding the data through a machine learning algorithm, the data needs to be manipulated in such a way that it is ready to be directly fed into an algorithm. This includes joining the two data sets, feature engineering, and other tasks that prepare the data. This will need to be done every time a new dataset is being used, so this must be built in a repeatable way. The machine learning library scikit-learn incorporates something called "pipelines" that can allow processed to be sequentially done to a dataframe. For purposes of this project two pipelines will be built, one will be used for feature engineering and joining the data, the other will be used to handle preparation of numerical, categorical, and date data. See sections: "Data Processing Pipeline" in [Predicting Soil Moisture.ipynb](ttps://raw.githubusercontent.com/ABESProjects/Predicting-Soil-Moisture-and-Weather).
+Before feeding the data through a machine learning algorithm, the data needs to be manipulated in such a way that it is ready to be directly fed into an algorithm. This includes joining the two data sets, feature engineering, and other tasks that prepare the data. This will need to be done every time a new dataset is being used, so this must be built in a repeatable way. The machine learning library scikit-learn incorporates something called "pipelines" that can allow processed to be sequentially done to a dataframe. For purposes of this project two pipelines will be built, one will be used for feature engineering and joining the data, the other will be used to handle preparation of numerical, categorical, and date data. See sections: "Data Processing Pipeline" in [Predicting Soil Moisture.ipynb](https://raw.githubusercontent.com/ABESProjects/Predicting-Soil-Moisture-and-Weather).
 
 ### 5.1 Loading and Joining Data
 
@@ -78,7 +78,7 @@ Currently only two features are added, the first is a boolean flag that says whe
 
 The next feature is a categorical feature that is the month of the year. It isn't very import to know the exact date of a measurement, but the month might be helpful in a model. This simplifies the model by not using date as a predictor, while still being able to capture this potentially important feature.
 
-An excerpt of the code used to create these two features, this comes from [Predicting Soil Moisture.ipynb](ttps://raw.githubusercontent.com/ABESProjects/Predicting-Soil-Moisture-and-Weather).
+An excerpt of the code used to create these two features, this comes from [Predicting Soil Moisture.ipynb](https://raw.githubusercontent.com/ABESProjects/Predicting-Soil-Moisture-and-Weather).
 
 ```python
 soil['Month'] = pd.DatetimeIndex(soil['Date']).month
@@ -146,13 +146,13 @@ These results show that the data is pretty well correlated and that there is rea
 
 While the output is continuous, there is an argument to use a categorical classifier model. For a specific plant, an optimal moisture range could be studied. For examples sake, the range could be 0.2-0.4 units. Then it would not matter if the soil is 0.2 or 0.3, both would be in the acceptable range. With this in mind, certain levels could be created to alert the farmer of which category they could be experiencing. For example there might be five levels: too dry, acceptable dryness, optimal, acceptable wetness, and too wet. The training data could be adjusted to fit into these categories. 
 
-Code to create a categorical variable for each of the depth measurements can be found in the section "Make Classifier Label" in the file: [Predicting Soil Moisture.ipynb](ttps://raw.githubusercontent.com/ABESProjects/Predicting-Soil-Moisture-and-Weather).
+Code to create a categorical variable for each of the depth measurements can be found in the section "Make Classifier Label" in the file: [Predicting Soil Moisture.ipynb](https://raw.githubusercontent.com/ABESProjects/Predicting-Soil-Moisture-and-Weather).
 
 In the end, the decision to not use classifier methods was made. After using a regressor, the output could be converted to a categorical feature if the user or application so desired this. As our output is continuous in nature, precision would be lost.
 
 ## 11. Various Other Linear Regression Model Experiments
 
-The next set of experiments came up with the results in the following table. This was a test to see if baseline Lasso or Ridge Regression would improve on the basic linear regression model. Results and code for this portion can be found in [Predicting Soil Moisture.ipynb](ttps://raw.githubusercontent.com/ABESProjects/Predicting-Soil-Moisture-and-Weather) under the "Linear Regression Tests" section. 
+The next set of experiments came up with the results in the following table. This was a test to see if baseline Lasso or Ridge Regression would improve on the basic linear regression model. Results and code for this portion can be found in [Predicting Soil Moisture.ipynb](https://raw.githubusercontent.com/ABESProjects/Predicting-Soil-Moisture-and-Weather) under the "Linear Regression Tests" section. 
 
 | Experiment            | Depth | Fit_Time | Pred_Time | r2_score |
 |-----------------------|-------|----------|-----------|----------|
