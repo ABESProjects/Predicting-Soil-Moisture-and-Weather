@@ -42,7 +42,7 @@ The relationship between soil moisture and weather patterns is one with a rich h
 
 The first data set comes from NOAA and contains daily summary data in regards to various measurements such as temperature, precipitation, wind speed, etc. For this project, only data that came from the closest station to the field will be used [2]. In this case, that is the Pullman station at the Pullman-Moscow airport. Below is an image showing the weather data collection location, and the red pin is at the longitude and latitude of one of the sensors in the field. This data is in csv format (see Figure 1).
 
-![Figure 1](https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-305/main/project/images/distance_map.png)
+![Figure 1](https://raw.githubusercontent.com/ABESProjects/Predicting-Soil-Moisture-and-Weather/main/images/distance_map.png)
 
 **Figure 1:** Estimated distance from weather reports to the crop fields. Distance is calculated using Google Maps
 
@@ -50,7 +50,7 @@ The second dataset comes from the USDA. This dataset consists of "hourly and dai
 
 Within the data, there are GIS file types that can be imported into Google Maps desktop to visualize the locations of the sensors and other geographical information. Below is an example of the sensor locations plotted on the satellite image (see Figure 2).
 
-![Figure 2](https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-305/main/project/images/sensor_locations.png)
+![Figure 2](https://raw.githubusercontent.com/ABESProjects/Predicting-Soil-Moisture-and-Weather/main/images/sensor_locations.png)
 
 **Figure 2:** Location of sensors within the test field
 
@@ -115,13 +115,13 @@ Before building a machine learning model, it is important to get a general idea 
 
 The first two visualizations ([viz_1](https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-305/main/project/images/one.png), [viz_2](https://github.com/cybertraining-dsc/fa20-523-305/blob/main/project/images/two.png)) are grids that show the entire distribution of measurements across each sensor. The first grid is the volume of water at 30 cm, and the second grid is the water volume at 150 cm. Each chart could be looked at and examined on it's own, but what is most important to note is the variability of the measures from location to location. These different sensors are not that far away, but show that different areas of the farm do retain water in different ways. See Figure 3 for a small section of the grid from the visualization on the sensors at 30cm.
 
-![Figure 3](https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-305/main/project/images/one_small.png)
+![Figure 3](https://raw.githubusercontent.com/ABESProjects/Predicting-Soil-Moisture-and-Weather/main/images/one_small.png)
 
 **Figure 3:** Six locations soil moisture level over time at 30 cm depth
 
 The third and fourth grid shows the temperature at 150 cm, the results are what would logically be expected. The different sensors do not show much variance from location to location.
 
-![Figure 4](https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-305/main/project/images/four_small.png)
+![Figure 4](https://raw.githubusercontent.com/ABESProjects/Predicting-Soil-Moisture-and-Weather/main/images/four_small.png)
 
 **Figure 4:** Six locations soil temperature over time at 150 cm depth
 
