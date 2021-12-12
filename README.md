@@ -4,6 +4,8 @@
 # Anurag Bhardwaj (2000320120039)
 # Aryan Tyagi (2000320120050)
 
+Data: [data](https://github.com/ABESProjects/Predicting-Soil-Moisture-and-Weather/tree/main/data)
+Images dataset: [Images](https://github.com/ABESProjects/Predicting-Soil-Moisture-and-Weather/tree/main/images)
 
 ## Abstract
 
