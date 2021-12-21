@@ -209,7 +209,7 @@ The end results of all experimentation was a process in which two datasets could
 
 ## 14. Acknowledgements
 
-We would like to thank Ms. Disha Mohini Pathak (offered in the 2021 3rd semester at ABES Engineering College, India) for their continued assistance and suggestions with regard to exploring this idea and also for their aid with preparing the various drafts of this article.
+We would like to thank Ms. Disha Mohini Pathak and opportunity to make this mini Project (offered in the 2021 3rd semester at ABES Engineering College, India) for their continued assistance and suggestions with regard to exploring this idea and also for their aid with preparing the various drafts of this article.
 
 ## 15. References
 
