@@ -1,3 +1,4 @@
+# Mini Project
 # Predicting Soil Moisture using Weather Data 
 # CS-A (ABESEC)
 # Atul Dagar (2000320120056)
@@ -208,7 +209,7 @@ The end results of all experimentation was a process in which two datasets could
 
 ## 14. Acknowledgements
 
-The author would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and the associate instructors in the *FA20-BL-ENGR-E534-11530: Big Data Applications* course (offered in the Fall 2020 semester at Indiana University, Bloomington) for their continued assistance and suggestions with regard to exploring this idea and also for their aid with preparing the various drafts of this article.
+We would like to thank Ms. Disha Mohini Pathak (offered in the 2021 3rd semester at ABES Engineering College, India) for their continued assistance and suggestions with regard to exploring this idea and also for their aid with preparing the various drafts of this article.
 
 ## 15. References
 
