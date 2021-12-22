@@ -4,7 +4,7 @@
 # Atul Dagar (2000320120056)
 # Anurag Bhardwaj (2000320120039)
 # Aryan Tyagi (2000320120050)
-# Code: [Predicting Soil Moisture.ipynb](https://raw.githubusercontent.com/ABESProjects/Predicting-Soil-Moisture-and-Weather/blob/main/code/Predicting%20Soil%20Moisture.ipynb).
+# Code: [Predicting Soil Moisture](https://github.com/ABESProjects/Predicting-Soil-Moisture-and-Weather/blob/main/code/Predicting%20Soil%20Moisture.ipynb).
 # Data: [data](https://github.com/ABESProjects/Predicting-Soil-Moisture-and-Weather/tree/main/data)
 
 ## Abstract
